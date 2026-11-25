@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paradise Payments demo</title>
+    <meta
+      name="description"
+      content="A guided tour of Paradise Payments, recorded from sample data."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!--
+      The demo player (#442), published to GitHub Pages by
+      scripts/demo-video/publish.mjs. Plain HTML, CSS and JS, no build: edit,
+      reload. It plays <edition>/timeline.json (written by capture.mjs):
+      snapshots of the real app's screens, with the cursor, typing, captions
+      and title cards animated on a fixed timeline (player.js).
+
+      URL:  ?edition=alpha|production   which edition (default: production)
+            ?scene=<chapter id>         start at a chapter
+            ?t=42.5                     freeze on that second (stills, links)
+            ?autoplay=1                 play at once (muted, as browsers require)
+            ?clean=1                    only the stage, filling the window
+            #alpha/refund               older links: edition/chapter
+      Keys: space play/pause, ←/→ ±2s, H hide everything but the stage
+    -->
+  </head>
+  <body>
+    <header class="site hide-clean">
+      <div class="in"><img src="favicon.png" alt="" />Paradise Payments</div>
+    </header>
+    <main>
+      <div class="hide-clean">
+        <h1>See Paradise Payments in action</h1>
+        <p class="lead">
+          A guided tour of the real app, with sample data. Jump to any feature
+          with the chapters.
+        </p>
+        <div class="tabs" role="tablist" id="tabs"></div>
+      </div>
+      <p class="note" id="status">Loading…</p>
+      <div class="grid" id="player" hidden>
+        <section aria-label="Player">
+          <div class="frame" id="frame">
+            <div class="stage" id="stage" aria-live="polite">
+              <div id="screens"></div>
+              <div class="ring" id="ring"></div>
+              <div class="caption" id="caption"></div>
+              <div class="cursor" id="cursor"></div>
+              <div class="card" id="card"></div>
+            </div>
+            <button
+              class="exit"
+              id="exit"
+              type="button"
+              aria-label="Back to the page"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" fill="none" />
+              </svg>
+            </button>
+            <button
+              class="bigplay"
+              id="bigplay"
+              type="button"
+              aria-label="Play"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </div>
+          <div class="hide-clean">
+            <input
+              class="scrub"
+              type="range"
+              id="scrub"
+              min="0"
+              max="1000"
+              step="1"
+              value="0"
+              aria-label="Position"
+            />
+            <div class="controls">
+              <button type="button" class="icon" id="play" aria-label="Play">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="i-play" d="M8 5v14l11-7z" />
+                  <path class="i-pause" d="M7 5h4v14H7zM13 5h4v14h-4z" />
+                </svg>
+              </button>
+              <span class="time" id="time">0:00 / 0:00</span>
+              <span class="spacer"></span>
+              <select id="speed" aria-label="Speed">
+                <option value="0.75">0.75×</option>
+                <option value="1" selected>1×</option>
+                <option value="1.25">1.25×</option>
+                <option value="1.5">1.5×</option>
+                <option value="2">2×</option>
+              </select>
+              <button
+                type="button"
+                class="icon"
+                id="mute"
+                aria-label="Music"
+                aria-pressed="true"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3z" />
+                  <path class="i-off" d="M3 3l18 18" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="icon"
+                id="full"
+                aria-label="Full screen"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"
+                    fill="none"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bar-chapters"
+              id="bar"
+              role="group"
+              aria-label="Chapters"
+            ></div>
+            <div class="tools">
+              <button type="button" class="pill" id="copy">
+                Copy link to this moment
+              </button>
+              <span id="meta"></span>
+            </div>
+            <h2 id="title"></h2>
+            <p class="summary" id="summary"></p>
+          </div>
+        </section>
+        <nav aria-label="Chapter list" class="hide-clean">
+          <h3 id="listTitle">Chapters</h3>
+          <ol id="list"></ol>
+        </nav>
+      </div>
+    </main>
+    <audio id="music" preload="none"></audio>
+    <script src="player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,681 @@
+{
+ "title": "Paradise Payments",
+ "tagline": "Online giving that works for your church and your people",
+ "version": "v3.14.6-51-g95d6306",
+ "cut": "main",
+ "recordedAt": "2026-11-25T03:49:05.054Z",
+ "view": {
+  "width": 1280,
+  "height": 720
+ },
+ "chapters": [
+  {
+   "id": "giving-page",
+   "title": "Giving in under a minute",
+   "summary": "A full gift: amount, ministry, saved card, receipt.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "a0b09cb9e63e",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Uma gives to Hope Fellowship. Watch the whole gift, start to finish.",
+     "hold": 2800
+    },
+    {
+     "do": "say",
+     "text": "She types an amount and picks the ministry: the food pantry.",
+     "hold": 1600
+    },
+    {
+     "do": "type",
+     "at": {
+      "x": 433,
+      "y": 283,
+      "w": 414,
+      "h": 36,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(2) > div:nth-child(2) > input:nth-child(1)"
+     },
+     "text": "50"
+    },
+    {
+     "do": "show",
+     "screen": "a199c58c3bfc",
+     "scroll": 0
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 433,
+      "y": 347,
+      "w": 414,
+      "h": 36,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(3) > div:nth-child(2) > select:nth-child(1)"
+     },
+     "label": "Food Pantry"
+    },
+    {
+     "do": "show",
+     "screen": "4bd6c2c31f77",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Monthly giving is one tap. Today she gives once.",
+     "hold": 1600
+    },
+    {
+     "do": "scroll",
+     "to": 9
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 433,
+      "y": 391,
+      "w": 414,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(4) > div:nth-child(1)"
+     },
+     "hold": 1400
+    },
+    {
+     "do": "scroll",
+     "to": 33
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 434,
+      "y": 412,
+      "w": 206,
+      "h": 26,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(4) > div:nth-child(2) > label:nth-child(2)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "c4bfe68be43a",
+     "scroll": 33
+    },
+    {
+     "do": "scroll",
+     "to": 43
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 433,
+      "y": 455,
+      "w": 414,
+      "h": 42,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > button:nth-child(5)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "9081bb1dcf65",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "She checks exactly what she’s giving before anything is charged.",
+     "hold": 2800
+    },
+    {
+     "do": "say",
+     "text": "Her card is saved, so there’s no card number to type again.",
+     "hold": 1800
+    },
+    {
+     "do": "scroll",
+     "to": 132
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 617,
+      "y": 507,
+      "w": 102,
+      "h": 35,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > button:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)"
+     },
+     "hold": 1600
+    },
+    {
+     "do": "scroll",
+     "to": 266
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 581,
+      "y": 678,
+      "w": 118,
+      "h": 42,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > form:nth-child(1) > div:nth-child(4) > button:nth-child(1)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "9f6640976c20",
+     "scroll": 266
+    },
+    {
+     "do": "show",
+     "screen": "7ae4e6cd4c05",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Done. $50 to the food pantry, in under a minute.",
+     "hold": 2600
+    },
+    {
+     "do": "say",
+     "text": "Her receipt is emailed at once, and the church sees the gift right away.",
+     "hold": 1600
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 416,
+      "y": 437,
+      "w": 448,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > p:nth-child(3)"
+     },
+     "hold": 1800
+    }
+   ]
+  },
+  {
+   "id": "donor-history",
+   "title": "Receipts on demand",
+   "summary": "Every gift and its receipt, without calling the office.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "851d0a1b0ec0",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Every donor gets their own giving home.",
+     "hold": 2200
+    },
+    {
+     "do": "say",
+     "text": "The gift she just made is already here.",
+     "hold": 1200
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 49,
+      "y": 255,
+      "w": 180,
+      "h": 28,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > h2:nth-child(1)"
+     },
+     "hold": 1600
+    },
+    {
+     "do": "say",
+     "text": "Her whole history, at every church she supports…",
+     "hold": 1400
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 552,
+      "y": 259,
+      "w": 63,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(2)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "a2e43e9d8373",
+     "scroll": 0
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 1156,
+      "y": 196,
+      "w": 55,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) > div:nth-child(7) > button:nth-child(1)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "7502086c3373",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "…and any receipt in one click. No more “can you resend my receipt?” emails.",
+     "hold": 3200
+    },
+    {
+     "do": "show",
+     "screen": "a2e43e9d8373",
+     "scroll": 0
+    }
+   ]
+  },
+  {
+   "id": "church-dashboard",
+   "title": "Your giving, live",
+   "summary": "Every gift the moment it comes in, and who gave it.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "4943a0b9c9ab",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Now the church’s side. Rachel runs the office at Hope Fellowship.",
+     "hold": 2800
+    },
+    {
+     "do": "say",
+     "text": "Uma’s gift to the food pantry is already on her dashboard.",
+     "hold": 1400
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 49,
+      "y": 277,
+      "w": 180,
+      "h": 28,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > h2:nth-child(1)"
+     },
+     "hold": 1600
+    },
+    {
+     "do": "say",
+     "text": "One click shows who gave it…",
+     "hold": 1200
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 49,
+      "y": 321,
+      "w": 152,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "ab8b5c3de3c8",
+     "scroll": 0
+    },
+    {
+     "do": "show",
+     "screen": "41c6e0677d2f",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "…their giving health, this year and every gift.",
+     "hold": 2800
+    },
+    {
+     "do": "scroll",
+     "to": 400
+    }
+   ]
+  },
+  {
+   "id": "records",
+   "title": "Every gift, sorted for you",
+   "summary": "Filter, sort and export every gift for your bookkeeper.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "bc4a40ec1846",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Records holds every gift to the church, however it was given.",
+     "hold": 2800
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 539,
+      "y": 148,
+      "w": 166,
+      "h": 32,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(3)"
+     },
+     "label": "Bank transfer"
+    },
+    {
+     "do": "show",
+     "screen": "57e21a0bc61f",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Just the bank transfers…",
+     "hold": 1800
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 713,
+      "y": 148,
+      "w": 208,
+      "h": 32,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(4)"
+     },
+     "label": "Pending bank transfers"
+    },
+    {
+     "do": "show",
+     "screen": "cca1147d01ef",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "…or the ones still on their way, so the books always match.",
+     "hold": 2800
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 713,
+      "y": 148,
+      "w": 208,
+      "h": 32,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(4)"
+     },
+     "label": "All statuses"
+    },
+    {
+     "do": "show",
+     "screen": "57e21a0bc61f",
+     "scroll": 0
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 539,
+      "y": 148,
+      "w": 166,
+      "h": 32,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(3)"
+     },
+     "label": "All payment types"
+    },
+    {
+     "do": "show",
+     "screen": "bc4a40ec1846",
+     "scroll": 0
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 929,
+      "y": 148,
+      "w": 180,
+      "h": 32,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(5)"
+     },
+     "label": "Amount: high to low"
+    },
+    {
+     "do": "show",
+     "screen": "f91021786c56",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Largest gifts first, in one click.",
+     "hold": 2200
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 32,
+      "y": 188,
+      "w": 155,
+      "h": 30,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) > button:nth-child(1)"
+     }
+    },
+    {
+     "do": "say",
+     "text": "And Export hands your bookkeeper a spreadsheet.",
+     "hold": 2600
+    }
+   ]
+  },
+  {
+   "id": "refund",
+   "title": "Refunds in two clicks",
+   "summary": "A duplicate gift refunded, with the reason on record.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "bc4a40ec1846",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Uma calls: she gave twice by mistake. Rachel opens the gift.",
+     "hold": 2600
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 69,
+      "y": 316,
+      "w": 112,
+      "h": 24,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(8) > div:nth-child(1) > button:nth-child(1)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "a78cdb48a20e",
+     "scroll": 0
+    },
+    {
+     "do": "scroll",
+     "to": 15
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 319,
+      "y": 397,
+      "w": 56,
+      "h": 20,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) > button:nth-child(2)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "60547ae855fe",
+     "scroll": 15
+    },
+    {
+     "do": "say",
+     "text": "She picks a reason and adds a note for the books.",
+     "hold": 1400
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 405,
+      "y": 355,
+      "w": 470,
+      "h": 28,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > label:nth-child(2) > select:nth-child(2)"
+     },
+     "label": "Duplicate gift"
+    },
+    {
+     "do": "show",
+     "screen": "10302fe39708",
+     "scroll": 15
+    },
+    {
+     "do": "type",
+     "at": {
+      "x": 405,
+      "y": 417,
+      "w": 470,
+      "h": 50,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > label:nth-child(3) > textarea:nth-child(2)"
+     },
+     "text": "Gave twice by mistake"
+    },
+    {
+     "do": "show",
+     "screen": "65ca0c3fb203",
+     "scroll": 15
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 745,
+      "y": 479,
+      "w": 130,
+      "h": 34,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > button:nth-child(2)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "a587d3c23c0a",
+     "scroll": 15
+    },
+    {
+     "do": "show",
+     "screen": "e917587e5528",
+     "scroll": 15
+    },
+    {
+     "do": "say",
+     "text": "Done. A same-day gift is voided, so Uma is never charged, and the record says why and who did it.",
+     "hold": 3400
+    }
+   ]
+  },
+  {
+   "id": "church-statements",
+   "title": "Year-end statements, sent for you",
+   "summary": "Every donor’s statement, previewed and emailed in one go.",
+   "events": [
+    {
+     "do": "show",
+     "screen": "1ae4cb21c359",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "January: every donor needs a giving statement.",
+     "hold": 2400
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 550,
+      "y": 177,
+      "w": 139,
+      "h": 34,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > form:nth-child(3) > fieldset:nth-child(1) > div:nth-child(2) > label:nth-child(3)"
+     }
+    },
+    {
+     "do": "choose",
+     "at": {
+      "x": 273,
+      "y": 251,
+      "w": 79,
+      "h": 36,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > form:nth-child(3) > label:nth-child(2) > select:nth-child(1)"
+     },
+     "label": "2025"
+    },
+    {
+     "do": "click",
+     "at": {
+      "x": 273,
+      "y": 339,
+      "w": 106,
+      "h": 42,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > form:nth-child(3) > div:nth-child(4) > button:nth-child(1)"
+     }
+    },
+    {
+     "do": "show",
+     "screen": "d3e897e708a5",
+     "scroll": 0
+    },
+    {
+     "do": "say",
+     "text": "Rachel previews exactly who gets what before anything goes out.",
+     "hold": 3000
+    },
+    {
+     "do": "say",
+     "text": "She adds a thank-you note, and one click emails every donor their statement.",
+     "hold": 1600
+    },
+    {
+     "do": "scroll",
+     "to": 463
+    },
+    {
+     "do": "type",
+     "at": {
+      "x": 273,
+      "y": 798,
+      "w": 734,
+      "h": 114,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > label:nth-child(5) > textarea:nth-child(1)"
+     },
+     "text": "Thank you for a generous year!"
+    },
+    {
+     "do": "show",
+     "screen": "fb0f570e0f99",
+     "scroll": 463
+    },
+    {
+     "do": "scroll",
+     "to": 474
+    },
+    {
+     "do": "highlight",
+     "at": {
+      "x": 273,
+      "y": 984,
+      "w": 195,
+      "h": 42,
+      "path": "html > body:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > main:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(7) > button:nth-child(1)"
+     },
+     "hold": 2200
+    }
+   ]
+  }
+ ],
+ "durationMs": 155802,
+ "music": "“Carefree” by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+ "musicFile": "music.webm"
+}
